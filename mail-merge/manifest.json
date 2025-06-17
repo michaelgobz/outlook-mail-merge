@@ -4,18 +4,18 @@
     "manifestVersion": "1.17",
     "version": "1.0.0",
     "name": {
-        "short": "mail-merge",
-        "full": "Contoso Task Pane Add-in"
+        "short": "Mail Merge",
+        "full": "Unified Mail Merge Add-in"
     },
     "description": {
-        "short": "A template to get started.",
-        "full": "This is the template to get started."
+        "short": "It does mail merging for the major mail networks such as outlook, gmail and yahoo.",
+        "full": "This add-in allows users to perform mail merge operations across various email platforms including Outlook, Gmail, and Yahoo. It provides a unified interface for managing contacts and sending personalized emails in bulk."
     },
     "developer": {
-        "name": "Contoso",
-        "websiteUrl": "https://www.contoso.com",
-        "privacyUrl": "https://www.contoso.com/privacy",
-        "termsOfUseUrl": "https://www.contoso.com/servicesagreement"
+        "name": "Michael Goboola",
+        "websiteUrl": "https://github.com/michaelgobz/outlook-mail-merge",
+        "privacyUrl": "https://github.com/michaelgobz/outlook-mail-merge/blob/privacy/README.md",
+        "termsOfUseUrl": "https://github.com/michaelgobz/outlook-mail-merge/blob/termsOfUse/README.md"
     },
     "icons": {
         "outline": "assets/outline.png",
