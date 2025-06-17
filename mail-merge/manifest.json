@@ -8,8 +8,10 @@
         "full": "Unified Mail Merge Add-in"
     },
     "description": {
-        "short": "It does mail merging for the major mail networks such as outlook, gmail and yahoo.",
-        "full": "This add-in allows users to perform mail merge operations across various email platforms including Outlook, Gmail, and Yahoo."
+        "short": "It does mail merging for the major mail networks",
+        "full": "This add-in allows users to perform mail merge operations across various email platforms including Outlook, Gmail, and Yahoo. It provides a unified interface for managing contacts and sending personalized emails in bulk."
+    },
+    "developer": {
         "name": "Michael Goboola",
         "websiteUrl": "https://github.com/michaelgobz/outlook-mail-merge",
         "privacyUrl": "https://github.com/michaelgobz/outlook-mail-merge/blob/privacy/README.md",
