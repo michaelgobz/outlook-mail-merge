@@ -1,5 +1,6 @@
 import fs from 'fs';
 import path from 'path';
+import xlsx from 'xlsx';
 
 
 function readEmailDetails(email) {
@@ -25,5 +26,15 @@ function getEmailAddressesFromExcel(filePath) {
     console.log(`Reading email addresses from Excel file: ${filePath}`);
     return ['example1@example.com', 'example2@example.com'];
 }
+// obtain the list of file attachments from the directory
+function getEmailAttachmentsFromDirectory(dirPath) {
+    // Placeholder function to simulate getting email attachments from a directory
+    //Todo: obtain the list of files from the directory
+    const attachments = fs.readdirSync(dirPath).filter(file => {
+        return file.endsWith('.pdf') || file.endsWith('.jpg');
+    });
+    console.log(`Getting email attachments from directory: ${dirPath}`);
+    return attachments;
+}
 
-module.exports = { readEmailDetails, sendEmail };
+module.exports = { readEmailDetails, sendEmail, getEmailAddressesFromExcel };
