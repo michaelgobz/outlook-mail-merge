@@ -37,4 +37,30 @@ function getEmailAttachmentsFromDirectory(dirPath) {
     return attachments;
 }
 
-module.exports = { readEmailDetails, sendEmail, getEmailAddressesFromExcel };
+function addDelay(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+}
+
+function customizeEmailBody(template, placeholders) {
+    let customizedBody = template;
+    for (const key in placeholders) {
+        const value = placeholders[key];
+        customizedBody = customizedBody.replace(new RegExp(`{{${key}}}`, 'g'), value);
+    }
+    return customizedBody;
+}
+
+function addFileDownloadLink(body, filePath) {
+    const fileName = path.basename(filePath);
+    const downloadLink = `<a href="file://${filePath}" download>${fileName}</a>`;
+    return `${body}\n\n${downloadLink}`;
+}
+
+module.exports = 
+{ readEmailDetails, 
+    sendEmail, 
+    getEmailAddressesFromExcel, 
+    getEmailAttachmentsFromDirectory, 
+    addDelay, 
+    customizeEmailBody, 
+    addFileDownloadLink };
