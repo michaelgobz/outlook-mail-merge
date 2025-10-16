@@ -31,5 +31,11 @@ function action(event) {
   event.completed();
 }
 
+function obtainDraftEmail( subject ) {
+  const item = Office.context.mailbox.item;
+  item.subject.setAsync(subject);
+  return item;
+}
+
 // Register the function with Office.
 Office.actions.associate("action", action);
