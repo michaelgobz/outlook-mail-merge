@@ -21,4 +21,16 @@ function eventsLogging() {
     console.log('Logging events...');
 }
 
-module.exports = { openFSUploadDialog };
+function uploadExcelFile(filePath) {
+    // Placeholder function to simulate uploading an Excel file
+    if (fs.existsSync(filePath)) {
+        console.log(`Uploading Excel file from: ${filePath}`);
+        // Simulate file upload
+        todo: 'Implement actual upload logic here'
+        
+    } else {
+        console.log('File does not exist.');
+    }
+}
+
+module.exports = { openFSUploadDialog, uploadExcelFile };
