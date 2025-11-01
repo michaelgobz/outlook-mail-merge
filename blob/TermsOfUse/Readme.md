@@ -2,7 +2,7 @@
 
 ## Last updated: June 2024
 
-Thank you for choosing our Outlook Mail Merge Add-in ("the Add-in"). By installing or using the Add-in, you agree to the following terms and conditions. Please read them carefully.
+Thank you for choosing our Outlook Mail Merger Add-in ("the Add-in"). By installing or using the Add-in, you agree to the following terms and conditions. Please read them carefully.
 
 ## 1. License Grant
 
@@ -59,7 +59,7 @@ If any provision of these Terms is found to be invalid or unenforceable, the rem
 
 ## 13. Contact Information
 
-For questions, support, or legal inquiries, please contact us at [your support email].
+For questions, support, or legal inquiries, please contact us at [michael@mbaaga.onmicrosoft.com].
 
 ---
 

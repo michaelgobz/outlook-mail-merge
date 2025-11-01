@@ -1,4 +1,4 @@
-# Privacy Statement for Outlook Mail Merge Add-in
+# Privacy Statement for Outlook Mail Merger Add-in
 
 ## Introduction
 
