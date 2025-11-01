@@ -4,8 +4,8 @@
     "manifestVersion": "1.17",
     "version": "1.0.0",
     "name": {
-        "short": "Mail Merge",
-        "full": "Unified Mail Merge Add-in"
+        "short": "Mail Merger",
+        "full": "Unified Mail Merger Add-in"
     },
     "description": {
         "short": "It does mail merging for the major mail networks",
@@ -32,12 +32,21 @@
                 {
                     "name": "MailboxItem.Read.User",
                     "type": "Delegated"
+                },
+                {
+                    "name": "MailboxItem.ReadWrite.User",
+                    "type": "Delegated"
                 }
             ]
         }
     },
     "validDomains": [
-        "mbaaga.onmicrosoft.com"
+        "mbaaga.onmicrosoft.com",
+        "localhost",
+        "gmail.com",
+        "ymail.com",
+        "outlook.com",
+        "*.***"
     ],
     "extensions": [
         {
@@ -96,7 +105,9 @@
             "ribbons": [
                 {
                     "contexts": [
-                        "mailRead"
+                        "mailRead",
+                        "mailCompose"
+                
                     ],
                     "tabs": [
                         {
@@ -104,7 +115,7 @@
                             "groups": [
                                 {
                                     "id": "msgReadGroup",
-                                    "label": "Contoso Add-in",
+                                    "label": "Mail Merger",
                                     "icons": [
                                         {
                                             "size": 16,

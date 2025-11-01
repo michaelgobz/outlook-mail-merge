@@ -39,3 +39,4 @@ function obtainDraftEmail( subject ) {
 
 // Register the function with Office.
 Office.actions.associate("action", action);
+Office.actions.associate("obtainDraftEmail", obtainDraftEmail);
